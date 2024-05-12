@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE6F17) Path("F:/embeded_learning/race/project/uart4.0/C4MB/prj/output_files/") File("C4MB_test.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE6F17) Path("F:/embeded_learning/race/project/FPGA_code/uart4.0/C4MB/prj/output_files/") File("C4MB_test.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

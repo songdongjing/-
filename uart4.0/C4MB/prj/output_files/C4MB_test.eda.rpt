@@ -1,5 +1,5 @@
 EDA Netlist Writer report for C4MB_test
-Wed May 08 21:48:29 2024
+Sun May 12 21:08:40 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed May 08 21:48:29 2024 ;
+; EDA Netlist Writer Status ; Successful - Sun May 12 21:08:40 2024 ;
 ; Revision Name             ; C4MB_test                             ;
 ; Top-level Entity Name     ; new_uart                              ;
 ; Family                    ; Cyclone IV E                          ;
@@ -66,20 +66,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+--------------------+
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                               ;
-+----------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                          ;
-+----------------------------------------------------------------------------------------------------------+
-; F:/embeded_learning/race/project/uart4.0/C4MB/prj/simulation/modelsim/C4MB_test_8_1200mv_85c_slow.vo     ;
-; F:/embeded_learning/race/project/uart4.0/C4MB/prj/simulation/modelsim/C4MB_test_8_1200mv_0c_slow.vo      ;
-; F:/embeded_learning/race/project/uart4.0/C4MB/prj/simulation/modelsim/C4MB_test_min_1200mv_0c_fast.vo    ;
-; F:/embeded_learning/race/project/uart4.0/C4MB/prj/simulation/modelsim/C4MB_test.vo                       ;
-; F:/embeded_learning/race/project/uart4.0/C4MB/prj/simulation/modelsim/C4MB_test_8_1200mv_85c_v_slow.sdo  ;
-; F:/embeded_learning/race/project/uart4.0/C4MB/prj/simulation/modelsim/C4MB_test_8_1200mv_0c_v_slow.sdo   ;
-; F:/embeded_learning/race/project/uart4.0/C4MB/prj/simulation/modelsim/C4MB_test_min_1200mv_0c_v_fast.sdo ;
-; F:/embeded_learning/race/project/uart4.0/C4MB/prj/simulation/modelsim/C4MB_test_v.sdo                    ;
-+----------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                         ;
++--------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                    ;
++--------------------------------------------------------------------------------------------------------------------+
+; F:/embeded_learning/race/project/FPGA_code/uart4.0/C4MB/prj/simulation/modelsim/C4MB_test_8_1200mv_85c_slow.vo     ;
+; F:/embeded_learning/race/project/FPGA_code/uart4.0/C4MB/prj/simulation/modelsim/C4MB_test_8_1200mv_0c_slow.vo      ;
+; F:/embeded_learning/race/project/FPGA_code/uart4.0/C4MB/prj/simulation/modelsim/C4MB_test_min_1200mv_0c_fast.vo    ;
+; F:/embeded_learning/race/project/FPGA_code/uart4.0/C4MB/prj/simulation/modelsim/C4MB_test.vo                       ;
+; F:/embeded_learning/race/project/FPGA_code/uart4.0/C4MB/prj/simulation/modelsim/C4MB_test_8_1200mv_85c_v_slow.sdo  ;
+; F:/embeded_learning/race/project/FPGA_code/uart4.0/C4MB/prj/simulation/modelsim/C4MB_test_8_1200mv_0c_v_slow.sdo   ;
+; F:/embeded_learning/race/project/FPGA_code/uart4.0/C4MB/prj/simulation/modelsim/C4MB_test_min_1200mv_0c_v_fast.sdo ;
+; F:/embeded_learning/race/project/FPGA_code/uart4.0/C4MB/prj/simulation/modelsim/C4MB_test_v.sdo                    ;
++--------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -88,20 +88,20 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Wed May 08 21:48:28 2024
+    Info: Processing started: Sun May 12 21:08:39 2024
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off C4MB_test -c C4MB_test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file C4MB_test_8_1200mv_85c_slow.vo in folder "F:/embeded_learning/race/project/uart4.0/C4MB/prj/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file C4MB_test_8_1200mv_0c_slow.vo in folder "F:/embeded_learning/race/project/uart4.0/C4MB/prj/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file C4MB_test_min_1200mv_0c_fast.vo in folder "F:/embeded_learning/race/project/uart4.0/C4MB/prj/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file C4MB_test.vo in folder "F:/embeded_learning/race/project/uart4.0/C4MB/prj/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file C4MB_test_8_1200mv_85c_v_slow.sdo in folder "F:/embeded_learning/race/project/uart4.0/C4MB/prj/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file C4MB_test_8_1200mv_0c_v_slow.sdo in folder "F:/embeded_learning/race/project/uart4.0/C4MB/prj/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file C4MB_test_min_1200mv_0c_v_fast.sdo in folder "F:/embeded_learning/race/project/uart4.0/C4MB/prj/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file C4MB_test_v.sdo in folder "F:/embeded_learning/race/project/uart4.0/C4MB/prj/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file C4MB_test_8_1200mv_85c_slow.vo in folder "F:/embeded_learning/race/project/FPGA_code/uart4.0/C4MB/prj/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file C4MB_test_8_1200mv_0c_slow.vo in folder "F:/embeded_learning/race/project/FPGA_code/uart4.0/C4MB/prj/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file C4MB_test_min_1200mv_0c_fast.vo in folder "F:/embeded_learning/race/project/FPGA_code/uart4.0/C4MB/prj/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file C4MB_test.vo in folder "F:/embeded_learning/race/project/FPGA_code/uart4.0/C4MB/prj/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file C4MB_test_8_1200mv_85c_v_slow.sdo in folder "F:/embeded_learning/race/project/FPGA_code/uart4.0/C4MB/prj/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file C4MB_test_8_1200mv_0c_v_slow.sdo in folder "F:/embeded_learning/race/project/FPGA_code/uart4.0/C4MB/prj/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file C4MB_test_min_1200mv_0c_v_fast.sdo in folder "F:/embeded_learning/race/project/FPGA_code/uart4.0/C4MB/prj/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file C4MB_test_v.sdo in folder "F:/embeded_learning/race/project/FPGA_code/uart4.0/C4MB/prj/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4645 megabytes
-    Info: Processing ended: Wed May 08 21:48:29 2024
+    Info: Peak virtual memory: 4643 megabytes
+    Info: Processing ended: Sun May 12 21:08:40 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 

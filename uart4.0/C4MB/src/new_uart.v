@@ -90,16 +90,15 @@ end
 integer pointer=0;
 always @(posedge trans_done) begin
 	pointer=pointer+1;
-	if(pointer>=5) pointer=5;
-	  case(pointer)
-			0: instr_array=all_instr_cal(0,0,1,2,3,5,1500,1500,1500,1500,1500,1000,1000,1000,1000,1000);
-			1: instr_array=all_instr_cal(1,0,1,2,3,5,1500,1500,1900,750,1500,1000,1000,1000,1000,1000);  
-			2: instr_array=all_instr_cal(2,0,1,2,3,5,1920,900,1500,900,1500,1000,1000,1000,1000,1000);
-			3: instr_array=all_instr_cal(3,0,1,2,3,5,1500,1500,1900,730,2500,1000,1000,1000,1000,1000);
-			4: instr_array=all_instr_cal(4,0,1,2,3,5,1100,1250,2000,1050,2500,1000,1000,1000,1000,1000);
-			5: instr_array=all_instr_cal(5,0,1,2,3,5,1500,1500,1900,730,1500,1000,1000,1000,1000,1000);
-			default: ;
-	  endcase
+  case(pointer)
+		0: instr_array=all_instr_cal(0,0,1,2,3,5,1500,1500,1500,1500,1500,1000,1000,1000,1000,1000);
+		1: instr_array=all_instr_cal(1,0,1,2,3,5,1500,1500,1900,750,1500,1000,1000,1000,1000,1000);  
+		2: instr_array=all_instr_cal(2,0,1,2,3,5,1920,900,1500,900,1500,1000,1000,1000,1000,1000);
+		3: instr_array=all_instr_cal(3,0,1,2,3,5,1500,1500,1900,730,2500,1000,1000,1000,1000,1000);
+		4: instr_array=all_instr_cal(4,0,1,2,3,5,1100,1250,2000,1050,2500,1000,1000,1000,1000,1000);
+		5: instr_array=all_instr_cal(5,0,1,2,3,5,1500,1500,1900,730,1500,1000,1000,1000,1000,1000);
+		default: ;
+  endcase
 	instr<=instr_array;
 
 end
@@ -130,13 +129,23 @@ end
 assign trans_en=trans_done;//发送结束信号
 
 //******************************计数器按键使能端口
-always @(*) key_en=key_en1&(~key_en2);//按键上升沿触发
-always @(posedge sys_clk)	begin //通过一个延迟的信号完成按键上升沿检测
-	key_en1<=key;
-	key_en2<=key_en1;
-	
+//always @(*) key_en=key_en1&(~key_en2);//按键上升沿触发
+//always @(posedge sys_clk)	begin //通过一个延迟的信号完成按键上升沿检测
+//	key_en1<=key;
+//	key_en2<=key_en1;
+//end
+//always @(*) tx_flag=(key_en&trans_free)|(~trans_free);  //按键使能且发送等待阶段，开始发送
+//发送标志为：①按过键②发送未结束
+reg key_flag=0;
+always @(posedge key) key_flag=1;
+
+always @(*) begin
+	if(key_flag==1&&pointer!=6)
+		tx_flag=1;
+	else
+		tx_flag=0;
 end
-always @(*) tx_flag=(key_en&trans_free)|(~trans_free);  //按键使能且发送等待阶段，开始发送
+		
 //连续发送代码
 //！！！！!!!!!!!!!!!!!!!!!!!!!!!!!不行就解注释
 //reg key_enable=0;

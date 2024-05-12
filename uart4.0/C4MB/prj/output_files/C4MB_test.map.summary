@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Wed May 08 21:48:20 2024
+Analysis & Synthesis Status : Successful - Sun May 12 21:08:31 2024
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : C4MB_test
 Top-level Entity Name : new_uart
 Family : Cyclone IV E
-Total logic elements : 378
-    Total combinational functions : 375
-    Dedicated logic registers : 155
-Total registers : 155
+Total logic elements : 356
+    Total combinational functions : 354
+    Dedicated logic registers : 153
+Total registers : 153
 Total pins : 6
 Total virtual pins : 0
 Total memory bits : 0
