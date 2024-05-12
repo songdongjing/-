@@ -1,0 +1,28 @@
+
+module uart_top(sys_clk,sys_rst_n);
+ 
+    input sys_clk;
+    input sys_rst_n;
+    
+    
+    
+    data_generator u1(
+        .sys_clk(sys_clk),
+        .sys_rst_n(sys_rst_n),
+        .trans_done(trans_done),
+		  
+        .instr(instr)
+    );
+    
+    new_uart u2(
+        .sys_clk(sys_clk),
+        .sys_rst_n(sys_rst_n),
+        .key(key),
+        .instr(instr),
+		  
+		  .led(led),
+        .uart_txd(uart_txd),
+        .trans_en(trans_en)
+    );    
+ 
+endmodule

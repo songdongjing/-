@@ -1,0 +1,39 @@
+module uart_send(
+    input	           sys_clk,             //系统时钟
+    input              sys_rst_n,           //系统复位，低电平有效
+	 input				  trans_done,
+    
+
+	 output  wire       [119:0]instr  //指令发送完成标志
+    );
+integer pointer=0;
+//数据生成文件
+str1="#000P1500T1000!";
+str2="#001P2500T1000!";
+str3="#002P3500T1400!";
+initial begin
+for(left=0;left<8;left=left+1)
+	begin
+	temp=str1[((left+1)*8-1)-:8];
+	str1[((left+1)*8-1)-:8]=str1[((15-left)*8-1)-:8];
+	str1[((15-left)*8-1)-:8]=temp;
+	
+	temp=str2[((left+1)*8-1)-:8];
+	str2[((left+1)*8-1)-:8]=str2[((15-left)*8-1)-:8];
+	str2[((15-left)*8-1)-:8]=temp;
+	
+	temp=str3[((left+1)*8-1)-:8];
+	str3[((left+1)*8-1)-:8]=str3[((15-left)*8-1)-:8];
+	str3[((15-left)*8-1)-:8]=temp;
+	end
+end
+
+always @(posedge sys_clk or negedge sys_rst_n) begin 
+    if (!sys_rst_n) begin                                  
+        pointer=0;
+    end 
+	 else if(trans_done==1)begin
+		  pointer=pointer+1;
+	 
+
+

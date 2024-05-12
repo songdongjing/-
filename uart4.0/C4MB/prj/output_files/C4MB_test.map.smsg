@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at new_uart.v(91): always construct contains both blocking and non-blocking assignments File: F:/embeded_learning/race/project/uart4.0/C4MB/src/new_uart.v Line: 91
